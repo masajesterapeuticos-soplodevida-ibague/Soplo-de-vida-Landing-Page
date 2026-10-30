@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masajes Terapéuticos Soplo de Vida | Clínica de Bienestar Integral en Ricaurte, Girardot e Ibagué</title>
+  <meta name="description" content="Rehabilitación física, neurorelajación y bienestar integral. Masajes terapéuticos clínicos en Ricaurte, Girardot (Cundinamarca) e Ibagué (Tolima), con modalidad virtual. Agenda tu valoración inicial.">
+  <link rel="canonical" href="https://masajesterapeuticos-soplodevida-ibague.github.io/">
+  <meta name="theme-color" content="#1B3D2F">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Masajes Terapéuticos Soplo de Vida">
+  <meta property="og:description" content="Sanación clínica, preventiva y consciente. Rehabilitación física y bienestar integral en el Tolima y Cundinamarca.">
+  <meta property="og:url" content="https://masajesterapeuticos-soplodevida-ibague.github.io/">
+  <meta property="og:locale" content="es_CO">
+
+  <link rel="icon" href="LOGO-2.ico" type="image/x-icon">
+
+  <!-- Tipografías: Inter (texto) + Playfair Display (títulos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50:  '#f2f7f4',
+              100: '#e0ede5',
+              200: '#c2dccb',
+              300: '#94c4a6',
+              400: '#5f9f78',
+              500: '#3d7a5c',
+              600: '#2e6148',
+              700: '#234E3C',
+              800: '#1B3D2F',
+              900: '#12291F'
+            },
+            champagne: '#C8A97E',
+            ivory: '#FAF9F6'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Datos estructurados: negocio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Masajes Terapéuticos Soplo de Vida",
+    "url": "https://masajesterapeuticos-soplodevida-ibague.github.io/",
+    "telephone": "+573155029193",
+    "sameAs": [
+      "https://www.facebook.com/p/Masajes-Terap%C3%A9uticos-Rousse-Aguilar-100075643279213/"
+    ],
+    "areaServed": [
+      "Ricaurte, Cundinamarca, Colombia",
+      "Girardot, Cundinamarca, Colombia",
+      "Ibagué, Tolima, Colombia"
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-ivory text-stone-800 font-sans antialiased">
+
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-4" aria-label="Navegación principal">
+
+      <a href="#inicio" class="flex items-center gap-2 group">
+        <span class="w-9 h-9 rounded-full bg-forest-700 flex items-center justify-center overflow-hidden">
+          <img src="LOGO ACTUALIZADO 1.png" alt="Logo Soplo de Vida" class="w-full h-full object-contain">
+        </span>
+        <span class="font-serif text-xl font-semibold text-forest-800 group-hover:text-forest-600 transition-colors">
+          Soplo de Vida
+        </span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+        <li><a href="#inicio" class="hover:text-forest-700 transition-colors">Inicio</a></li>
+        <li><a href="#beneficios" class="hover:text-forest-700 transition-colors">Beneficios</a></li>
+        <li><a href="#tecnicas" class="hover:text-forest-700 transition-colors">Técnicas</a></li>
+        <li><a href="#sedes" class="hover:text-forest-700 transition-colors">Sedes</a></li>
+      </ul>
+
+      
+      <!--Boton Navbar Whatsapp-->
+      <div class="flex items-center gap-3">
+        <a href="#contacto"
+           target="_blank" rel="noopener"
+           class="hidden sm:inline-flex items-center gap-2 bg-forest-700 hover:bg-forest-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5">
+          <i data-lucide="calendar-check" class="w-4 h-4"></i>
+          Agendar Sesión Terapéutica
+        </a>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <button id="menu-btn" type="button"
+                class="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-forest-800 hover:bg-forest-100 transition-colors"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <i data-lucide="menu" class="w-6 h-6" id="icon-menu"></i>
+          <i data-lucide="x" class="w-6 h-6 hidden" id="icon-close"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur border-t border-forest-100 shadow-lg">
+      <ul class="px-5 py-4 space-y-1 text-stone-700 font-medium">
+        <li><a href="#inicio" class="block px-3 py-2.5 rounded-lg hover:bg-forest-50 hover:text-forest-700 mobile-link">Inicio</a></li>
+        <li><a href="#beneficios" class="block px-3 py-2.5 rounded-lg hover:bg-forest-50 hover:text-forest-700 mobile-link">Beneficios</a></li>
+        <li><a href="#tecnicas" class="block px-3 py-2.5 rounded-lg hover:bg-forest-50 hover:text-forest-700 mobile-link">Técnicas</a></li>
+        <li><a href="#sedes" class="block px-3 py-2.5 rounded-lg hover:bg-forest-50 hover:text-forest-700 mobile-link">Sedes</a></li>
+        <li class="pt-2">
+          <a href="https://wa.me/573155029193?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20terap%C3%A9utica"
+             target="_blank" rel="noopener"
+             class="flex items-center justify-center gap-2 bg-forest-700 text-white font-semibold px-5 py-3 rounded-full mobile-link">
+            <i data-lucide="calendar-check" class="w-4 h-4"></i>
+            Agendar Sesión Terapéutica
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 scroll-mt-20">
+      <!-- Fondo decorativo -->
+      <div class="absolute inset-0 bg-gradient-to-b from-forest-50 via-ivory to-ivory" aria-hidden="true"></div>
+      <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-forest-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-40 -left-32 w-[450px] h-[450px] rounded-full bg-champagne/10 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-4xl mx-auto px-5 text-center reveal">
+        <span class="inline-flex items-center gap-2 bg-white border border-forest-100 text-forest-700 text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-full shadow-sm">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          Rehabilitación física · Bienestar integral
+        </span>
+
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-forest-900 leading-tight mt-6">
+          Recupera el equilibrio de tu <em class="text-forest-600 not-italic border-b-4 border-champagne/50">cuerpo, mente y espíritu</em>
+        </h1>
+
+        <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed max-w-2xl mx-auto">
+          Unimos el conocimiento anatómico y fisiológico con técnicas de neurorelajación
+          para acompañar tu sanación, aliviar el dolor y devolverte bienestar funcional.
+        </p>
+
+        <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#contacto"
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-8 py-4 rounded-full shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            Agenda tu sesión terapéutica
+          </a>
+          <a href="#tecnicas"
+             class="inline-flex items-center gap-2 bg-white hover:bg-forest-50 text-forest-800 font-semibold px-8 py-4 rounded-full border border-forest-200 shadow-sm transition-all hover:-translate-y-1">
+            Conocer técnicas
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Datos de confianza -->
+        <dl class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <div class="bg-white/70 backdrop-blur rounded-2xl px-6 py-5 shadow-sm border border-forest-100">
+            <dt class="text-xs uppercase tracking-wide text-stone-500 font-medium">Técnicas especializadas</dt>
+            <dd class="font-serif text-3xl font-semibold text-forest-700 mt-1">+8</dd>
+          </div>
+          <div class="bg-white/70 backdrop-blur rounded-2xl px-6 py-5 shadow-sm border border-forest-100">
+            <dt class="text-xs uppercase tracking-wide text-stone-500 font-medium">Sedes de atención</dt>
+            <dd class="font-serif text-3xl font-semibold text-forest-700 mt-1">3 + virtual</dd>
+          </div>
+          <div class="bg-white/70 backdrop-blur rounded-2xl px-6 py-5 shadow-sm border border-forest-100">
+            <dt class="text-xs uppercase tracking-wide text-stone-500 font-medium">Enfoque</dt>
+            <dd class="font-serif text-3xl font-semibold text-forest-700 mt-1">Clínico</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section id="beneficios" class="py-20 sm:py-24 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="text-center max-w-2xl mx-auto reveal">
+          <span class="text-forest-600 text-xs font-bold uppercase tracking-widest">Beneficios</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-forest-900 mt-3">
+            Un enfoque que trata la causa, no solo el síntoma
+          </h2>
+          <p class="text-stone-600 mt-4">
+            Cada sesión es evaluada y adaptada a tus necesidades clínicas, en un ambiente
+            seguro, ético y profesional.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+            <span class="w-12 h-12 rounded-xl bg-forest-50 text-forest-700 flex items-center justify-center">
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </span>
+            <h3 class="font-serif text-xl font-semibold text-forest-900 mt-5">Alivio del dolor y la tensión</h3>
+            <p class="text-stone-600 mt-2 text-sm leading-relaxed">
+              Tratamiento de contracturas, cervicalgias, lumbalgias y tensiones musculares
+              mediante terapia manual especializada.
+            </p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+            <span class="w-12 h-12 rounded-xl bg-forest-50 text-forest-700 flex items-center justify-center">
+              <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+            </span>
+            <h3 class="font-serif text-xl font-semibold text-forest-900 mt-5">Rehabilitación de Bienestar Integral</h3>
+            <p class="text-stone-600 mt-2 text-sm leading-relaxed">
+              Rehabilitación post-cirugía, postparto y post-trauma, con fortalecimiento
+              neuromuscular para volver a moverte con confianza.
+            </p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+            <span class="w-12 h-12 rounded-xl bg-forest-50 text-forest-700 flex items-center justify-center">
+              <i data-lucide="wind" class="w-6 h-6"></i>
+            </span>
+            <h3 class="font-serif text-xl font-semibold text-forest-900 mt-5">Equilibrio integral</h3>
+            <p class="text-stone-600 mt-2 text-sm leading-relaxed">
+              Neurorelajación y activación de los sistemas circulatorio y linfático,
+              reconectando cuerpo, mente y espíritu.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TÉCNICAS (GALERÍA DE INFOGRAFÍAS) ================= -->
+<section id="tecnicas" class="py-20 sm:py-24 bg-forest-50/60 scroll-mt-20">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="text-forest-600 text-xs font-bold uppercase tracking-widest">Nuestras técnicas</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-forest-900 mt-3">
+        Terapias especializadas para cada necesidad
+      </h2>
+      <p class="text-stone-600 mt-4">
+        Toca cada imagen para ver todos los beneficios en detalle. Agenda directamente
+        por WhatsApp la técnica que necesites.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-12">
+
+      <!-- 1. Masoterapia -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/1.png" alt="Masoterapia" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 2. Neurorelajante -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/2.png" alt="Masaje Neurorelajante" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 3. Deportivo -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/3.png" alt="Masaje Deportivo" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 4. Reflexología -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/4.png" alt="Reflexología" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 5. Descontracturante -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/5.png" alt="Masaje Descontracturante" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 6. Drenaje Linfático -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/6.png" alt="Drenaje Linfático Manual" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 7. Craneofacial -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/7.png" alt="Masaje Craneo Facial" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 8. Tratamientos y Rehabilitación -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/8.png" alt="Tratamientos y Rehabilitación" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 9. Fortalecimientos -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/9.png" alt="Fortalecimientos" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+      <!-- 10. Guías -->
+      <button type="button" class="img-beneficio group bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 reveal cursor-zoom-in">
+        <img src="img/10.png" alt="Guías Nutricionales y Energéticas" class="w-full h-auto block group-hover:scale-105 transition-transform duration-500">
+      </button>
+
+    </div>
+
+    <!-- Botón CTA después de la galería -->
+    <div class="text-center mt-12 reveal">
+      <a href="https://wa.me/573155029193?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20terap%C3%A9utica"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-8 py-4 rounded-full shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        Agendar sesión por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= SEDES / COBERTURA ================= -->
+    <section id="sedes" class="py-20 sm:py-24 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="text-center max-w-2xl mx-auto reveal">
+          <span class="text-forest-600 text-xs font-bold uppercase tracking-widest">Sedes y cobertura</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-forest-900 mt-3">
+            Cerca de ti, presencial o virtual
+          </h2>
+          <p class="text-stone-600 mt-4">
+            Atención programada según zona y agenda, con acompañamiento personalizado
+            en cada punto de atención.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+            <span class="w-12 h-12 rounded-full bg-forest-50 text-forest-700 flex items-center justify-center mx-auto">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </span>
+            <h3 class="font-serif text-xl font-semibold text-forest-900 mt-5">Ricaurte</h3>
+            <p class="text-stone-500 text-xs font-semibold uppercase tracking-wide mt-1">Cundinamarca</p>
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Atención directa con enfoque en recuperación física, alivio de tensiones
+              musculares y manejo del dolor localizado.
+            </p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+            <span class="w-12 h-12 rounded-full bg-forest-50 text-forest-700 flex items-center justify-center mx-auto">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </span>
+            <h3 class="font-serif text-xl font-semibold text-forest-900 mt-5">Girardot</h3>
+            <p class="text-stone-500 text-xs font-semibold uppercase tracking-wide mt-1">Cundinamarca y alrededores</p>
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Sesiones terapéuticas orientadas a la rehabilitación funcional, relajación
+              profunda y equilibrio físico-emocional.
+            </p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-stone-100 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 reveal">
+            <span class="w-12 h-12 rounded-full bg-forest-50 text-forest-700 flex items-center justify-center mx-auto">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </span>
+            <h3 class="font-serif text-xl font-semibold text-forest-900 mt-5">Ibagué</h3>
+            <p class="text-stone-500 text-xs font-semibold uppercase tracking-wide mt-1">Tolima</p>
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Terapias corporales especializadas, cuidado preventivo y recuperación
+              muscular programada.
+            </p>
+          </article>
+        </div>
+
+        <!-- Banner modalidad virtual -->
+        <div class="mt-8 bg-forest-800 rounded-2xl px-8 py-7 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-md reveal">
+          <div class="flex items-center gap-4">
+            <span class="w-12 h-12 rounded-full bg-forest-700 text-white flex items-center justify-center shrink-0">
+              <i data-lucide="video" class="w-6 h-6"></i>
+            </span>
+            <div>
+              <h3 class="font-serif text-lg font-semibold text-white">También atendemos en línea</h3>
+              <p class="text-forest-200 text-sm mt-1">
+                Terapias y consultas virtuales desde cualquier lugar, con el mismo enfoque clínico y consciente.
+              </p>
+            </div>
+          </div>
+          <a href="https://wa.me/573155029193?text=Hola%2C%20me%20interesa%20una%20consulta%20virtual"
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-white text-forest-800 font-semibold px-6 py-3 rounded-full hover:bg-forest-50 transition-colors shrink-0">
+            Consultar virtual <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+<!-- ================= RESEÑAS ================= -->
+<section id="resenas" class="seccion-resenas">
+  <div class="contenedor">
+
+    <!-- Encabezado -->
+    <div class="resenas-header">
+      <span class="etiqueta">Testimonios</span>
+      <h2 class="titulo-seccion">Lo que dicen nuestros pacientes</h2>
+
+      <!-- Promedio general -->
+      <div class="promedio-badge">
+        <div class="promedio-estrellas" id="promedio-estrellas" aria-hidden="true"></div>
+        <span class="promedio-numero" id="promedio-numero">0.0</span>
+        <span class="promedio-texto" id="promedio-texto">/ 5 · 0 reseñas</span>
+      </div>
+
+    <!-- Grid de reseñas -->
+    <div class="resenas-grid" id="resenas-grid">
+      <!-- Las reseñas se generan gracias al JS -->
+    </div>
+
+<!-- Botón Ver Más (Oculto por defecto) -->
+    <div style="text-align: center; margin-top: 2rem;">
+      <button type="button" id="btn-ver-mas" class="btn-primario" style="display: none; background-color: transparent; border: 2px solid #234E3C; color: #234E3C;">
+        Ver más reseñas
+      </button>
+    </div>
+
+
+    <!-- Botón CTA -->
+    <div class="resenas-cta">
+      <button type="button" id="btn-abrir-form-resena" class="btn-primario">
+        <i data-lucide="star" class="icono-btn"></i>
+        Deja tu reseña
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ================= FORMULARIO DE VALORACIÓN ================= -->
+    <section id="contacto" class="py-20 sm:py-24 bg-forest-900 relative overflow-hidden scroll-mt-20">
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-forest-700/40 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="text-champagne text-xs font-bold uppercase tracking-widest">Valoración inicial</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-white mt-3 leading-tight">
+            Da el primer paso hacia tu bienestar
+          </h2>
+          <p class="text-forest-200 mt-5 leading-relaxed">
+            Déjanos tus datos y te contactaremos por WhatsApp para agendar tu valoración
+            inicial. Evaluamos tu caso y te recomendamos la técnica ideal para tu proceso
+            de sanación y rehabilitación.
+          </p>
+
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center gap-3 text-forest-100 text-sm">
+              <span class="w-8 h-8 rounded-full bg-forest-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-champagne"></i>
+              </span>
+              Valoración clínica personalizada sin costo
+            </li>
+            <li class="flex items-center gap-3 text-forest-100 text-sm">
+              <span class="w-8 h-8 rounded-full bg-forest-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-champagne"></i>
+              </span>
+              Plan de tratamiento adaptado a tu condición
+            </li>
+            <li class="flex items-center gap-3 text-forest-100 text-sm">
+              <span class="w-8 h-8 rounded-full bg-forest-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-champagne"></i>
+              </span>
+              Atención presencial o virtual, según tu ubicación
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulario (envía a WhatsApp) -->
+        <form id="form-valoracion" class="bg-white rounded-2xl p-7 sm:p-9 shadow-xl reveal" novalidate>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="nombre" class="block text-sm font-semibold text-stone-700 mb-1.5">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name"
+                     placeholder="Tu nombre"
+                     class="w-full rounded-xl border border-stone-200 bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition">
+            </div>
+            <div>
+              <label for="telefono" class="block text-sm font-semibold text-stone-700 mb-1.5">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" required autocomplete="tel"
+                     placeholder="300 000 0000"
+                     class="w-full rounded-xl border border-stone-200 bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition">
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label for="sede" class="block text-sm font-semibold text-stone-700 mb-1.5">Sede de preferencia</label>
+            <select id="sede" name="sede" required
+                    class="w-full rounded-xl border border-stone-200 bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition">
+              <option value="" disabled selected>Selecciona una sede</option>
+              <option value="Ricaurte (Cundinamarca)">Ricaurte (Cundinamarca)</option>
+              <option value="Girardot (Cundinamarca)">Girardot (Cundinamarca)</option>
+              <option value="Ibagué (Tolima)">Ibagué (Tolima)</option>
+              <option value="Virtual (en línea)">Virtual (en línea)</option>
+            </select>
+          </div>
+
+          <div class="mt-4">
+            <label for="tecnica" class="block text-sm font-semibold text-stone-700 mb-1.5">Técnica de interés</label>
+            <select id="tecnica" name="tecnica" required
+                    class="w-full rounded-xl border border-stone-200 bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition">
+              <option value="" disabled selected>Selecciona una técnica</option>
+              <option value="Masoterapia">Masoterapia</option>
+              <option value="Masaje Deportivo">Masaje Deportivo</option>
+              <option value="Reflexología">Reflexología</option>
+              <option value="Descontracturante">Descontracturante</option>
+              <option value="Drenaje Linfático (Manual y Brasileño)">Drenaje Linfático (Manual y Brasileño)</option>
+              <option value="Masaje Craneofacial">Masaje Craneofacial</option>
+              <option value="Rehabilitación Post-Cirugía / Postparto">Rehabilitación Post-Cirugía / Postparto</option>
+              <option value="Fortalecimiento Neuromuscular">Fortalecimiento Neuromuscular</option>
+              <option value="Aún no lo sé, quiero valoración">Aún no lo sé, quiero valoración</option>
+            </select>
+          </div>
+
+          <div class="mt-4">
+            <label for="mensaje" class="block text-sm font-semibold text-stone-700 mb-1.5">Cuéntanos tu caso <span class="font-normal text-stone-400">(opcional)</span></label>
+            <textarea id="mensaje" name="mensaje" rows="3"
+                      placeholder="Ej: llevo semanas con dolor lumbar después de una cirugía..."
+                      class="w-full rounded-xl border border-stone-200 bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent transition resize-none"></textarea>
+          </div>
+
+          <p id="form-error" class="hidden text-sm text-red-600 mt-3" role="alert"></p>
+
+          <button type="submit"
+                  class="w-full mt-6 inline-flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-6 py-4 rounded-full shadow-md transition-all hover:shadow-lg hover:-translate-y-0.5">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            Solicitar valoración por WhatsApp
+          </button>
+          <p class="text-center text-xs text-stone-400 mt-3">
+            Al enviar serás redirigido a WhatsApp con tu solicitud lista para enviar.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-forest-950 bg-forest-900 text-forest-200">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-3">
+      <div>
+        <a href="#inicio" class="flex items-center gap-2">
+          <span class="w-9 h-9 rounded-full bg-forest-700 flex items-center justify-center overflow-hidden">
+            <img src="LOGO ACTUALIZADO 1.png" alt="Logo Soplo de Vida" class="w-full h-full object-contain">
+          </span>
+          <span class="font-serif text-xl font-semibold text-white">Soplo de Vida</span>
+        </a>
+        <p class="text-sm text-forest-300 mt-4 leading-relaxed">
+          Masajes terapéuticos con enfoque clínico, preventivo y consciente.
+          Sanación física, mental y espiritual en un entorno seguro y profesional.
+        </p>
+      </div>
+
+      <nav aria-label="Navegación del pie de página">
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide">Navegación</h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+          <li><a href="#beneficios" class="hover:text-white transition-colors">Beneficios</a></li>
+          <li><a href="#tecnicas" class="hover:text-white transition-colors">Técnicas</a></li>
+          <li><a href="#sedes" class="hover:text-white transition-colors">Sedes</a></li>
+          <li><a href="#contacto" class="hover:text-white transition-colors">Agendar cita</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide">Contacto</h3>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li>
+            <a href="tel:+573155029193" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <i data-lucide="phone" class="w-4 h-4 text-champagne"></i>
+              +57 315 502 9193
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/573155029193" target="_blank" rel="noopener" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4 text-champagne"></i>
+              WhatsApp directo
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/p/Masajes-Terap%C3%A9uticos-Rousse-Aguilar-100075643279213/"
+               target="_blank" rel="noopener" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4 text-champagne"></i>
+              Facebook
+            </a>
+          </li>
+          <li class="flex items-center gap-2.5 text-forest-300">
+            <i data-lucide="clock" class="w-4 h-4 text-champagne"></i>
+            Atención con cita previa
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-forest-800">
+      <p class="max-w-6xl mx-auto px-5 py-5 text-xs text-forest-400 text-center sm:text-left">
+        &copy; 2026 Masajes Terapéuticos "Soplo de Vida". Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573155029193?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20terap%C3%A9utica"
+   id="whatsapp-float"
+   target="_blank" rel="noopener"
+   aria-label="Escríbenos por WhatsApp">
+  <img src="img/social.png" alt="WhatsApp" width="50" height="50">
+</a>
+
+
+<!-- ================= MODAL DE IMÁGENES ================= -->
+<div id="modal-img" class="modal" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+  <button type="button" class="modal-cerrar" aria-label="Cerrar imagen ampliada">
+    <i data-lucide="x" class="icono-cerrar"></i>
+  </button>
+  <img id="img-ampliada" src="" alt="Imagen ampliada" class="modal-imagen">
+</div>
+
+  
+
+ <!-- ================= MODAL: FORMULARIO DE RESEÑA ================= -->
+<div id="modal-resena" class="modal" role="dialog" aria-modal="true" aria-label="Deja tu reseña" hidden>
+  <div class="modal-card">
+
+    <button type="button" class="modal-cerrar" aria-label="Cerrar formulario">
+      <i data-lucide="x" class="icono-cerrar"></i>
+    </button>
+
+    <h3 class="modal-titulo">Deja tu reseña</h3>
+    <p class="modal-subtitulo">
+      Tu opinión nos ayuda a mejorar. Será revisada antes de publicarse.
+    </p>
+
+    <form id="form-resena" class="form-resena" novalidate>
+
+      <div class="campo">
+        <label for="resena-nombre" class="campo-label">Tu nombre</label>
+        <input type="text" id="resena-nombre" name="nombre" required
+               placeholder="Ej: María G." class="campo-input">
+      </div>
+
+      <div class="campo">
+        <label class="campo-label">Tu calificación</label>
+        <div id="selector-estrellas" class="selector-estrellas" role="radiogroup" aria-label="Calificación">
+          <button type="button" class="estrella-btn" data-valor="1" aria-label="1 estrella">
+            <i data-lucide="star" class="icono-estrella"></i>
+          </button>
+          <button type="button" class="estrella-btn" data-valor="2" aria-label="2 estrellas">
+            <i data-lucide="star" class="icono-estrella"></i>
+          </button>
+          <button type="button" class="estrella-btn" data-valor="3" aria-label="3 estrellas">
+            <i data-lucide="star" class="icono-estrella"></i>
+          </button>
+          <button type="button" class="estrella-btn" data-valor="4" aria-label="4 estrellas">
+            <i data-lucide="star" class="icono-estrella"></i>
+          </button>
+          <button type="button" class="estrella-btn" data-valor="5" aria-label="5 estrellas">
+            <i data-lucide="star" class="icono-estrella"></i>
+          </button>
+        </div>
+        <input type="hidden" id="resena-estrellas" name="estrellas" value="0">
+      </div>
+
+      <div class="campo">
+        <label for="resena-comentario" class="campo-label">Tu opinión</label>
+        <textarea id="resena-comentario" name="comentario" rows="4" required
+                  placeholder="Cuéntanos cómo fue tu experiencia..."
+                  class="campo-input campo-textarea"></textarea>
+      </div>
+
+      <p id="resena-error" class="form-error" hidden role="alert"></p>
+
+      <button type="submit" class="btn-primario btn-full">
+        <i data-lucide="send" class="icono-btn"></i>
+        Enviar reseña
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ================= MODAL: ADMIN ================= -->
+<div id="modal-admin" class="modal" role="dialog" aria-modal="true" aria-label="Panel de Administración" hidden>
+  <div class="modal-card" style="max-width: 800px;">
+    <button type="button" class="modal-cerrar" aria-label="Cerrar admin" id="cerrar-admin">
+      <i data-lucide="x" class="icono-cerrar"></i>
+    </button>
+
+    <h3 class="modal-titulo">Panel de Administración</h3>
+    
+    <!-- Login (visible al principio) -->
+    <div id="admin-login-view">
+      <p class="modal-subtitulo">Ingresa tus credenciales de administrador</p>
+      <form id="form-admin-login" style="margin-top: 2rem;">
+        <div class="campo">
+          <label class="campo-label">Correo</label>
+          <input type="email" id="admin-email" class="campo-input" required>
+        </div>
+        <div class="campo">
+          <label class="campo-label">Contraseña</label>
+          <input type="password" id="admin-password" class="campo-input" required>
+        </div>
+        <p id="admin-error" class="form-error" hidden></p>
+        <button type="submit" class="btn-primario btn-full">Entrar</button>
+      </form>
+    </div>
+
+    <!-- Panel de control (oculto al principio) -->
+    <div id="admin-panel-view" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <p style="color: #2e6148; font-weight: 600;">Bienvenido, Admin</p>
+        <button id="btn-logout" style="color: #dc2626; background: none; border: none; cursor: pointer; font-weight: 600;">Salir</button>
+      </div>
+      
+      <div id="admin-lista-resenas" style="max-height: 400px; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem;">
+        <!-- Aquí se inyectan las reseñas pendientes -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<!-- SDK de Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- configuración de supabase -->
+<script src="js/supabase-client.js" defer></script>
+<!-- script principal -->
+<script src="js/script.js" defer></script>
+</html>
